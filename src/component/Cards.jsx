@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Card from './Card'
 
-function Cards(props) {
-    
-    const [tour, settours] = useState(props);
-    console.log(tour);
+const Cards = ({userinfo}) => {
 
 
   return (
-    <div>
-        <dir>card</dir>
-</div>
+
+  
+    <div className='w-full flex flex-wrap'>
+       {
+            userinfo.map((card) => (<Card {...card} key={card.id}/>) )
+        }
+  </div>
   )
 }
 

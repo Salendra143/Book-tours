@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Header() {
+const Header = () => {
   return (
-   <div>
-            <div>
-                <p>Book Your <span>Tours</span></p>
-            </div>
-</div>
+    <div> 
+          <div>
+                <p className=" text-[2rem] text-black text-center font-semibold border-b-2 pb-5 ">Tours Simple Project</p>
+          </div>
+  </div>
   )
 }
 

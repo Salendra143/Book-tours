@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from './component/Header'
 import Cards from './component/Cards'
-import data from './data'
-
-function App() {
+import data from "./data";
+const App = () => {
   return (
+<>
     <div>
       <Header/>
-      <Cards data={data} />
-</div>
+      <Cards userinfo={data}/>
+  </div>
+
+</>
   )
 }
 
